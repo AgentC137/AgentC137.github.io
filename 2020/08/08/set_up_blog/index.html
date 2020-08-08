@@ -28,7 +28,7 @@
 <meta property="og:description" content="从中午忙到现在，通过不断探索，终于把网站搭好了，记录一下简要的过程，总结经验。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-08T09:24:11.000Z">
-<meta property="article:modified_time" content="2020-08-08T13:27:05.318Z">
+<meta property="article:modified_time" content="2020-08-08T13:29:53.790Z">
 <meta property="article:author" content="青石">
 <meta property="article:tag" content="建站">
 <meta name="twitter:card" content="summary">
@@ -186,7 +186,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-08 17:24:11 / 修改时间：21:27:05" itemprop="dateCreated datePublished" datetime="2020-08-08T17:24:11+08:00">2020-08-08</time>
+              <time title="创建时间：2020-08-08 17:24:11 / 修改时间：21:29:53" itemprop="dateCreated datePublished" datetime="2020-08-08T17:24:11+08:00">2020-08-08</time>
             </span>
 
           
@@ -222,8 +222,7 @@
 <h2 id="3-在freenom或其他域名申请网页上申请域名。"><a href="#3-在freenom或其他域名申请网页上申请域名。" class="headerlink" title="3.在freenom或其他域名申请网页上申请域名。"></a>3.在freenom或其他域名申请网页上申请域名。</h2><p>freenom（<a target="_blank" rel="noopener" href="https://www.freenom.com/%EF%BC%89%E7%9A%84%E5%9F%9F%E5%90%8D%E4%B8%80%E5%B9%B4%E5%85%8D%E8%B4%B9%EF%BC%8C%E5%B9%B6%E4%B8%94%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9C%A8%E5%9B%BD%E5%A4%96%EF%BC%8C%E6%97%A0%E9%A1%BB%E5%A4%87%E6%A1%88%E3%80%82%E7%94%B3%E8%AF%B7%E5%A5%BD%E5%9F%9F%E5%90%8D%E4%B9%8B%E5%90%8E%EF%BC%8C%E8%BF%94%E5%9B%9EGridea%EF%BC%8C%E5%9C%A8%E2%80%9C%E5%9F%9F%E5%90%8D%E2%80%9D%E2%80%9CCNAME%E2%80%9D%E4%B8%AD%E5%A1%AB%E5%86%99%E5%9F%9F%E5%90%8D%EF%BC%8C%E4%B8%8D%E9%9C%80%E8%A6%81%E5%B8%A6https%E5%AD%97%E6%A0%B7%EF%BC%8C%E5%A6%82%EF%BC%9Aagentc137.cf">https://www.freenom.com/）的域名一年免费，并且服务器在国外，无须备案。申请好域名之后，返回Gridea，在“域名”“CNAME”中填写域名，不需要带https字样，如：agentc137.cf</a> 。</p>
 <h2 id="4-用vercel托管仓库，之后在freenom上进行域名解析。"><a href="#4-用vercel托管仓库，之后在freenom上进行域名解析。" class="headerlink" title="4.用vercel托管仓库，之后在freenom上进行域名解析。"></a>4.用vercel托管仓库，之后在freenom上进行域名解析。</h2><p><a target="_blank" rel="noopener" href="https://vercel.com/dashboard">https://vercel.com/dashboard</a> 可以使用github注册，如果github的邮箱是QQ邮箱，则会提示错误。注册后将仓库托管，托管的仓库名叫Project。进入其中，点击settings–domains，添加自己的网站地址，点击nameservers，将给出的两行<br>    ns1.vercel-dns.com<br>    ns2.vercel-dns.com<br>写进freenom的DNS解析中。</p>
 <p>配置工作大功告成。静等DNS生效，尝试访问网站。Hello world！</p>
-<p>##写在后面##</p>
-<p>一开始我尝试用cloudflare进行域名解析，无奈速度太慢，不挂梯子很难访问且影响排版。之后又尝试了其他的一些方法，都不理想，所幸朋友说可以使用vercel，终于成功。探索与“折腾”可以带来很大乐趣，成功之后的满足感也叫人愉快。</p>
+<h2 id="写在后面"><a href="#写在后面" class="headerlink" title="写在后面"></a>写在后面</h2><p>一开始我尝试用cloudflare进行域名解析，无奈速度太慢，不挂梯子很难访问且影响排版。之后又尝试了其他的一些方法，都不理想，所幸朋友说可以使用vercel，终于成功。探索与“折腾”可以带来很大乐趣，成功之后的满足感也叫人愉快。</p>
 <p>探索是无止境的，这个教程也是一个初步版本，事实上还有许许多多的内容可以发掘，例如Gridea自带的主题少得可怜，对markdown的支持也不算很好，我之后打算换换主题。另外，这个网站也是静态网站，暂时没有评论区，之后可以研究着部署评论功能。</p>
 <p>参考文章：<br><a target="_blank" rel="noopener" href="https://juejin.im/post/6844904064778518535">利用GitHub和HEXO免费搭建个人博客</a><br><a target="_blank" rel="noopener" href="https://vincentqin.tech/posts/speedup-gitpage/">使用vercel加速Hexo静态博客访问</a></p>
 
@@ -260,6 +259,7 @@
 
           </div>
           
+    <div class="comments" id="gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -306,7 +306,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">总体思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.</span> <span class="nav-text">具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7%E5%B9%B6%E5%BB%BA%E7%AB%8B%E4%BB%93%E5%BA%93"><span class="nav-number">2.1.</span> <span class="nav-text">1.注册github账号并建立仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AEGridea"><span class="nav-number">2.2.</span> <span class="nav-text">2.配置Gridea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9C%A8freenom%E6%88%96%E5%85%B6%E4%BB%96%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7%E7%BD%91%E9%A1%B5%E4%B8%8A%E7%94%B3%E8%AF%B7%E5%9F%9F%E5%90%8D%E3%80%82"><span class="nav-number">2.3.</span> <span class="nav-text">3.在freenom或其他域名申请网页上申请域名。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%94%A8vercel%E6%89%98%E7%AE%A1%E4%BB%93%E5%BA%93%EF%BC%8C%E4%B9%8B%E5%90%8E%E5%9C%A8freenom%E4%B8%8A%E8%BF%9B%E8%A1%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E3%80%82"><span class="nav-number">2.4.</span> <span class="nav-text">4.用vercel托管仓库，之后在freenom上进行域名解析。</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E4%BD%93%E6%80%9D%E8%B7%AF"><span class="nav-number">1.</span> <span class="nav-text">总体思路</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.</span> <span class="nav-text">具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7%E5%B9%B6%E5%BB%BA%E7%AB%8B%E4%BB%93%E5%BA%93"><span class="nav-number">2.1.</span> <span class="nav-text">1.注册github账号并建立仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%85%8D%E7%BD%AEGridea"><span class="nav-number">2.2.</span> <span class="nav-text">2.配置Gridea</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%9C%A8freenom%E6%88%96%E5%85%B6%E4%BB%96%E5%9F%9F%E5%90%8D%E7%94%B3%E8%AF%B7%E7%BD%91%E9%A1%B5%E4%B8%8A%E7%94%B3%E8%AF%B7%E5%9F%9F%E5%90%8D%E3%80%82"><span class="nav-number">2.3.</span> <span class="nav-text">3.在freenom或其他域名申请网页上申请域名。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E7%94%A8vercel%E6%89%98%E7%AE%A1%E4%BB%93%E5%BA%93%EF%BC%8C%E4%B9%8B%E5%90%8E%E5%9C%A8freenom%E4%B8%8A%E8%BF%9B%E8%A1%8C%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E3%80%82"><span class="nav-number">2.4.</span> <span class="nav-text">4.用vercel托管仓库，之后在freenom上进行域名解析。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%90%8E%E9%9D%A2"><span class="nav-number">2.5.</span> <span class="nav-text">写在后面</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -411,6 +411,26 @@
   
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '96f1a2318b01fe740698',
+      clientSecret: '512680f8ddd9e083f7f7304b4aee16ffdf9ae2b3',
+      repo        : 'AgentC137.github.io',
+      owner       : 'AgentC137',
+      admin       : ['AgentC137'],
+      id          : 'a32b69e537ddfe8284f93f1d1e4a01fa',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
